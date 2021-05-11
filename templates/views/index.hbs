@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style/reset.css">
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="title-wrapper">
+      <h1 class="title">
+        Adapt to<br>the weather
+      </h1>
+    </div>
+
+    {{>header}} 
+
+    <div class="content-wrapper">
+      <form>
+        <input id="location" type="text" placeholder="Location">
+        <button type="submit">Search</button>
+      </form>
+      <p id="message1"></p>
+      <p id="message2"></p>
+    </div>
+
+    {{>footer}}
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

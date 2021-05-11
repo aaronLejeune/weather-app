@@ -1,0 +1,115 @@
+
+body *{
+  color: #323232;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+h1.title {
+  font-size: 8rem;
+  font-weight: 600;
+}
+img{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+
+/*
+* 
+* Generic
+*
+*/
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100vh;
+}
+.title-wrapper{
+  width: 100%;
+  padding: 10% 0px 5% 30px;
+}
+.content-wrapper{
+  width: 100%;
+  padding: 30px;
+}
+/*
+* 
+* Navigation
+*
+*/
+.navigation{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 2px solid #efefef;
+}
+.navigation a{
+  color: #6b6b6b;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.navigation a:hover{
+  color: lightskyblue;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+.navigation a:not(:first-child){
+  margin-left: 10px;
+  
+}
+
+/*
+* 
+* Footer
+*
+*/
+.footer{
+  position: absolute;
+  bottom: 20px;
+} 
+
+/*
+* 
+* Form
+*
+*/
+#location{
+  padding: 10px 15px;
+  border: none;
+  background-color: #efefef;
+  border-radius: 10px;
+  width: 200px;
+}
+button[type=submit]{
+  border: none;
+  background-color: aqua;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+/*
+* 
+* Error handling
+*
+*/
+.error-message{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error-code{
+  font-size: 3rem;
+  line-height: 0.5rem;
+}
